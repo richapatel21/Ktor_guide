@@ -1,0 +1,104 @@
+Ktor : lightweight web framework for kotlin
+
+Developed by : jetbrains
+- jetbrains created many IDEs :
+    - Intellij
+    - Android studio
+    - Rider
+    - pycharm
+- jetbrains created kotlin language
+
+Use: 
+- designed to build scalable and high performance web applications
+- create asynchronous client server applications
+- anything from microservices to multiplatform HTTP client apps
+
+UseCases:
+- offers support for asynchronous programming
+- routing
+- templating
+- HTTP clients and servers
+
+Compatibility:
+- comatible with diff environment and systems
+- like android and cloud platforms
+
+
+What is Ktor?
+- open source framework build by jetbrains
+- to build asynchronous servers and clients using kotlin language
+
+    -> Ktor is designed specifically for Kotlin, leveraging Kotlin’s features like 
+       coroutines to handle asynchronous programming. This is crucial for building 
+       applications that can manage multiple tasks simultaneously without blocking 
+       the main thread, leading to efficient and responsive applications.
+    -> Asynchronous servers and clients mean that Ktor can handle many requests at
+       once (e.g., handling web traffic) without slowing down due to waiting for 
+       individual requests to complete, making it ideal for high-performance web services.
+
+- offers lightweight approch to build web applications along with extensibility and 
+    modularization
+
+    -> Lightweight Approach: 
+        Ktor is not a monolithic framework. You only include the components (modules)
+        you need, which keeps the application lean and efficient. It avoids unnecessary
+        overhead by not forcing you to include unused features.
+    -> Extensibility: 
+        Ktor allows you to extend and customize its functionality easily by adding modules
+        or writing custom code. This makes it adaptable to various use cases, from simple
+        APIs to complex web applications.
+    -> Modularization: 
+        The framework is built in a modular fashion, meaning you can include or exclude
+        features as needed. This modular design makes it easier to maintain and scale 
+        applications as they grow.
+
+- good for performance, scalability, modularity
+    performance (involves speed and efficient resource usage of memoery and cpu),
+    scalability (increasing workloads and size doesn't compromise performance), 
+    modularity (breaking diff functionality in small modules)
+    
+- useful to create high traffic web applications easily
+
+    Ktor’s asynchronous and non-blocking nature makes it highly suitable for 
+    applications that need to handle high traffic volumes, such as large-scale
+    web services, APIs, or real-time applications. Its efficient resource usage 
+    ensures that it can serve many requests simultaneously without degrading performance.
+
+- supports varity of deployment options: 
+    1. running on traditional servers
+    2. containerized environment
+    3. serverless platforms like AWSLambda
+
+    -> Running on Traditional Servers:
+
+        - Ktor applications can be deployed on standard web servers (e.g., Apache, Nginx)
+          or application servers (e.g., Tomcat, Jetty). This is a conventional deployment
+          method where the application runs in a managed environment, typically within an
+          organization’s IT infrastructure.
+        - Traditional Servers offer stability and are often used for enterprise-grade 
+          applications where control over the hosting environment is crucial.
+    
+    -> Containerized Environment:
+
+        - Ktor can be packaged into Docker containers, which are lightweight, portable
+          units that can run applications in isolated environments. This makes it easy
+          to deploy, scale, and manage applications across different environments without
+          worrying about underlying infrastructure differences.
+        - Containers like Docker provide consistency between development and production 
+          environments, improving deployment reliability.
+    
+    -> Serverless Platforms like AWS Lambda:
+
+        - Ktor applications can be deployed on serverless platforms, such as AWS Lambda,
+          where the cloud provider automatically manages the infrastructure. 
+          With serverless, you don’t need to provision or manage servers. Instead,
+          you focus on writing your application code, and the platform scales 
+          automatically based on demand.
+        - Serverless is ideal for applications with unpredictable traffic patterns,
+          as you only pay for the compute resources you use, and the platform handles scaling.
+
+What is asynchronous?
+- asynchronous means handling tasks simultaneously
+- multiple requests can be processed simultaneously without waiting for each one to finish
+
+

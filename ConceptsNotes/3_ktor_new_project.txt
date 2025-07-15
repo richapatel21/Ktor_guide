@@ -1,0 +1,19 @@
+resource: https://codemaker2016.medium.com/introduction-to-ktor-6e238fa20c3
+
+
+When we create new ktor project in Intellij IDEA, below fields/terms we fill in IDE
+
+Project Name: The name of the project
+
+Build System: The build system to build the project.
+
+Website: The website use to generate project artifact.
+
+Artifact: Read-only generated via the Website you entered.
+
+Ktor Version: Used to specify the version of Ktor.
+
+Engine: Core part used to run the server.
+
+Configuration in: Represents the locations to store server variables.
+

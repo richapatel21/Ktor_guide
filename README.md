@@ -1,2 +1,2 @@
-# Ktor_guide
-Ktor notes
+# ktor-learning-guide
+Comprehensive notes, examples, resources

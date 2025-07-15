@@ -1,0 +1,105 @@
+When we create new project we get option to add plugin
+
+Click on Add plugins buttons to add some features such as 
+- Content Negotiation, 
+- kotlinx.serialization, 
+- Default Headers and Routing
+
+
+kotlinx.serialization: 
+    
+    ContentNegotiation allows the users to use content converters provided 
+    by the kotlinx.serialization library. 
+    This library supports JSON, CBOR, ProtoBuf, and other formats.
+
+Routing: 
+
+    Routing is a plugin that is installed into an application to simplify 
+    and structure the page request handling. It provides a structured way 
+    to handle incoming HTTP requests and generate corresponding responses.
+    
+    With Ktor routing, developers can define routes that match specific request
+    URLs and methods, and then handle these requests with custom logic.
+
+
+
+
+
+
+### **kotlinx.serialization**
+- **kotlinx.serialization** is a Kotlin library that provides multiplatform serialization 
+    support. 
+    It allows you to convert Kotlin objects into formats like JSON, CBOR, ProtoBuf, 
+    and more, and vice versa.
+- The library is concise, type-safe, and works seamlessly with Kotlin's data classes.
+
+### **ContentNegotiation**
+- **ContentNegotiation** is a Ktor feature that allows your server to automatically 
+    handle the serialization and deserialization of request and response bodies based 
+    on the content type.
+- It acts as a bridge between the client and server to ensure that the data is serialized
+    and deserialized into a format both can understand.
+
+
+### **Integration of kotlinx.serialization with ContentNegotiation**
+1. **Support for Multiple Formats:**  
+
+   `kotlinx.serialization` supports various formats such as JSON, CBOR 
+   (Concise Binary Object Representation), ProtoBuf (Protocol Buffers), and others.
+
+    These formats allow you to efficiently handle different data types:
+   - **JSON**: Human-readable text format, commonly used for APIs.
+   - **CBOR**: Binary format for efficient data encoding.
+   - **ProtoBuf**: Google's binary format for serialization.
+
+
+2. **Configuring ContentNegotiation in Ktor:**
+
+   - In your Ktor application, you can configure the `ContentNegotiation` 
+     feature to use `kotlinx.serialization` for handling the formats you need.
+   - You specify which format (e.g., JSON) you want to support, and Ktor automatically
+    handles content conversion for you.
+
+
+3. **Example:**
+
+   Here's how you might set up `kotlinx.serialization` with **ContentNegotiation** for JSON:
+
+   ```kotlin
+   import io.ktor.application.*
+   import io.ktor.features.ContentNegotiation
+   import io.ktor.serialization.kotlinx.json.*
+   import kotlinx.serialization.Serializable
+   import kotlinx.serialization.json.Json
+
+   fun Application.module() {
+       install(ContentNegotiation) {
+           json(Json { prettyPrint = true })
+       }
+       
+       // Define routes and handle requests
+   }
+
+   @Serializable
+   data class MyDataClass(val id: Int, val name: String)
+   ```
+   - **@Serializable**: This annotation is used to mark a Kotlin data class as serializable
+     by `kotlinx.serialization`.
+   - **json(Json { prettyPrint = true })**: This configures `ContentNegotiation` to use
+     JSON as the content format, with pretty printing enabled.
+
+
+4. **Handling Requests and Responses:**
+   - With this setup, when your server receives a request with a JSON body, Ktor automatically
+     deserializes it into the corresponding Kotlin data class.
+   - Similarly, when you return a response, Ktor serializes the Kotlin object into the desired
+     format (e.g., JSON) and sends it back to the client.
+
+### **Advantages:**
+- **Type Safety**: Ensures that the data you're working with is always in the expected format.
+- **Efficiency**: Using formats like CBOR or ProtoBuf can reduce payload size and improve 
+    performance.
+- **Flexibility**: You can easily switch between different formats based on your use case.
+
+This combination of `kotlinx.serialization` and `ContentNegotiation` in Ktor allows for 
+seamless and efficient content handling in your applications.

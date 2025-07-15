@@ -1,0 +1,9 @@
+best : https://github.com/ktorio/ktor-samples?tab=readme-ov-file
+
+https://github.com/mjovanc/awesome-ktor?tab=readme-ov-file#articles
+
+best intro to ktor article: https://codemaker2016.medium.com/introduction-to-ktor-6e238fa20c3
+
+https://www.codepur.dev/networking-cookbook/
+
+https://www.google.com/search?q=ktor+learning+resources&oq=ktor&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0NDQyajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8

@@ -1,0 +1,8 @@
+Routing: 
+
+Routing is a plugin that is installed into an application to simplify and 
+structure the page request handling. It provides a structured way to handle
+incoming HTTP requests and generate corresponding responses. 
+
+With Ktor routing, developers can define routes that match specific request URLs 
+and methods, and then handle these requests with custom logic.

@@ -1,0 +1,23 @@
+src directory: 
+    This directory typically contains the source code for the application. 
+    It may be further divided into subdirectories based on the modules or features
+    of the application.
+
+resources directory: 
+    This directory typically contains any non-source files that are required by 
+    the application, such as configuration files, static assets, or templates.
+
+test directory: 
+    This directory typically contains unit and integration tests for the application.
+
+build.gradle.kts or pom.xml: 
+    These files contain the build configuration for the application, including 
+    dependencies, plugins, and other settings.
+
+application.conf: 
+    This file contains the configuration settings for the Ktor application, 
+    such as server settings, logging, and security settings.
+
+Application.kt: 
+    This file contains the main entry point for the Ktor application, where the server
+    is configured and started.

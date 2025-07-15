@@ -1,0 +1,45 @@
+I had 4 rounds of interviews: 
+1. Senior Recruiter: Analysed my background and why I wanted to join Thoughtworks. 
+Basically they wanted to understand if you gel with their culture. 
+Also guided me on the further interview processes and how I can prepare for them.
+2. Technical interview (coding) : Tested TDD skills on my technology - javascript. 
+They had shared a repo with me 5-6 days before itself and gave me enough time to prepare. 
+They also asked me how I can refactor it and other clean coding techniques. 
+It was a pair programming, where I was asked to share my screen and 
+I have to discuss with developers from TW's side on how to proceed with the 
+coding and the best approches. 
+3. Technical interview (design/architecture): was asked to design an e-commerce system.
+Had to draw the flowchart and give sufficient explanations for choosing each technology.
+Focus on microservices. 
+4. Cultural fit: Casual interview where we share our life experiences
+and stories. Also will be asked to pick cards which would have a scenario, and we have to
+tell how we would handle the situation. Each is an elimination round.
+
+Prepare your core tech stack well. 
+Should have good problem solving well. 
+and clean code and TDD is major focus area. Ensure your good at that.
+
+1. System Design. 
+2. Clean Code and understanding in pair programming. 
+3. Javascript Basic. 
+4. Previous and current project knowledge. 
+5. Lastest implementation and initiative take in current projects.
+
+
+Interview
+
+there were 3 rounds 
+1. Code Pairing Round: We were given the Joy of Energy repository code to review 
+beforehand. During the interview, we implemented an API, such as calculating the
+cost of energy from startDate to endDate. They evaluated us on code architecture,
+  naming conventions, and overall coding practices. 
+2.Technical Round: This round involved basic OOP questions and a simple DSA problem, 
+such as finding the maximum product of two numbers in an array containing both 
+positive and negative numbers. 
+3.Cultural Round: We answered behavioral questions, such as how to motivate and 
+support team members and discussed the societal impact of technology with real-life examples.
+
+1.discussed the societal impact of technology with real-life examples 
+2.how to motivate and support team members 
+3. finding the maximum product of two numbers in an array containing both positive
+ and negative numbers
